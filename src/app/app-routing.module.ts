@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('./not-found/not-found.module').then((m) => m.NotFoundModule),
   },
-  { path: '', redirectTo: 'general', pathMatch: 'full' },
-  { path: '**', redirectTo: 'general/not-found', pathMatch: 'full' },
+  { path: '', redirectTo: 'vibe', pathMatch: 'full' },
+  { path: '**', redirectTo: 'vibe/not-found', pathMatch: 'full' },
 ];
 
 @NgModule({

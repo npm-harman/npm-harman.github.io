@@ -1,0 +1,13 @@
+<div class="pics-container border rounded">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let im of images; let i = index">
+      <div class="picsum-img-wrapper">
+        <img [src]="im" alt="Random first slide" />
+      </div>
+      <div class="carousel-caption">
+        <!-- <h3>{{ i + 1}} slide label</h3> -->
+        <p class="quote">{{quotes[i]}}.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
