@@ -8,7 +8,7 @@ import { quotes } from './quotes';
 })
 export class PicsContainerComponent implements OnInit {
   constructor() {}
-  images = Array.from(Array(9).keys()).map((n) => `/assets/img${n+1}.png`);
+  images = Array.from(Array(8).keys()).map((n) => `/assets/img${n+1}.png`);
   quotes = quotes;
   ngOnInit(): void {}
 }
